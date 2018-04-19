@@ -1,0 +1,10 @@
+2018-04-12 14:22:41 [2@ramylson-vmk]
+  *** MySQL query error:
+  SQL: INSERT
+                   INTO `glpi_entities` (`id`,`level`,`name`,`completename`,`entities_id`,`max_closedate`,`date_creation`,`date_mod`) VALUES ('7','2','Osasco - SP','Perim > Osasco - SP','0','2018-04-12 14:22:41','2018-04-12 14:22:41','2018-04-12 14:22:41')
+  Error: Duplicate entry '0-Osasco - SP' for key 'unicity'
+  Backtrace :
+  inc/commondbtm.class.php:504                       
+  inc/commondbtm.class.php:928                       CommonDBTM->addToDB()
+  front/dropdown.common.form.php:58                  CommonDBTM->add()
+  front/entity.form.php:47                           include()
